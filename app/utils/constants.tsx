@@ -17,3 +17,4 @@ export const ALPHA_API_SECRET = "GYLJ2G9GWHJNVUS1";
 export const FINNHUB_API_SECRET = "cp7qq6hr01qi8q89ahjgcp7qq6hr01qi8q89ahk0"
 
 export const FINNHUB_WEBHOOK_SECRET = "cp7qq6hr01qi8q89ahl0"
+export const google_oauth_access_token = "cp7qq6hr01qi8q89ahl0"
