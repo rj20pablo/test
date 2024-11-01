@@ -1,14 +1,16 @@
 import axios from "axios";
+import { ALPHA_API_SECRET, FINNHUB_API_SECRET, FINNHUB_WEBHOOK_SECRET } from './constants'
+
 type API_PROVIDER_TYPE = "alphavantage" | "benzinga" | "finnhub";
 
 const API_PROVIDER: API_PROVIDER_TYPE = "finnhub";
 
 const alphaEndpoint = "https://www.alphavantage.co/";
-const alphaApikey = "GYLJ2G9GWHJNVUS1";
+const alphaApikey = ALPHA_API_SECRET;
 
 const finnhubEndpoint = "https://finnhub.io/api/v1";
-export const finnhubApiKey = "cp7qq6hr01qi8q89ahjgcp7qq6hr01qi8q89ahk0";
-export const finhubWebhookSecret = "cp7qq6hr01qi8q89ahl0";
+export const finnhubApiKey = FINNHUB_API_SECRET;
+export const finhubWebhookSecret = FINNHUB_WEBHOOK_SECRET;
 
 const searchStockFromProvider: Partial<
   Record<
